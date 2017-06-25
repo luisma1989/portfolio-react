@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.parallax {
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    background: url(./assets/home1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .section_overlay {
+    background-color: rgba(33, 33, 33, .75);
+}
+
+.logo {
+    padding-bottom: 50px;
+}
+
+.home_text {
+    text-align: left;
+}
+
+.home-iphone {
+    text-align: right;
+}
+
+.home-iphone img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .home-iphone {
+        display: none;
+    }
+    .home_text {
+        text-align: center;
+    }
+}
+
+.home_text h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px
+}
+
+.home_text p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 0px;
+    font-weight: 300;
+}
