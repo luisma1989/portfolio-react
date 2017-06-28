@@ -1,5 +1,7 @@
 import React from 'react'
 import WOW from 'wowjs'
+import './About.scss'
+import imageFace from './assets/face.png'
 
 class About extends React.Component {
   componentDidMount () {
@@ -19,24 +21,20 @@ class About extends React.Component {
               </div>
             </div>
           </div>
-        </div>
-        <div className='inner_about_area'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-6'>
-                <div className='about_phone wow fadeInLeft' data-wow-duration='1s' data-wow-delay='.5s'>
-                  <img className='wow bounceIn' data-wow-duration='1.5s' src='assets/face.png' alt='mi imagen' />
-                </div>
+          <div className='row'>
+            <div className='col-md-6'>
+              <div className='about_phone wow fadeInLeft' data-wow-duration='1s' data-wow-delay='.5s'>
+                <img className='wow bounceIn' data-wow-duration='1.5s' src={imageFace} alt='mi imagen' />
               </div>
-              <div className='col-md-6  wow fadeInRight' data-wow-duration='1.5s' data-wow-delay='1s'>
-                <div className='inner_about_title'>
-                  <h2>CUENTO CON UNA GRAN ...</h2>
-                  <p>
-                    ...HABILIDAD DE APRENDIZAJE AUTÓNOMO EN EL CAMPO DE LA INFORMÁTICA Y ESPECIALMENTE EN EL
-                    APARTADO DEL DESARROLLO FRONT-END. DISPONGO DE UNA ALTA EXPERIENCIA DE TRABAJO EN EQUIPO,
-                    ESPECIALMENTE EN EL MUNDO DEL DESARROLLO WEB.
-                  </p>
-                </div>
+            </div>
+            <div className='col-md-6  wow fadeInRight' data-wow-duration='1.5s' data-wow-delay='1s'>
+              <div className='inner_about_title'>
+                <h2>CUENTO CON UNA GRAN ...</h2>
+                <p>
+                  ...HABILIDAD DE APRENDIZAJE AUTÓNOMO EN EL CAMPO DE LA INFORMÁTICA Y ESPECIALMENTE EN EL
+                  APARTADO DEL DESARROLLO FRONT-END. DISPONGO DE UNA ALTA EXPERIENCIA DE TRABAJO EN EQUIPO,
+                  ESPECIALMENTE EN EL MUNDO DEL DESARROLLO WEB.
+                </p>
               </div>
             </div>
           </div>

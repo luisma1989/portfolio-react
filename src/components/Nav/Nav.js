@@ -5,27 +5,27 @@ export const Nav = () => (
   <div id='main'>
     <ul id='navigationMenu'>
       <li>
-        <a nameClass='home' href='#'>
+        <a className='home' href='#'>
           <span>Home</span>
         </a>
       </li>
       <li>
-        <a nameClass='about' href='#'>
+        <a className='about' href='#'>
           <span>About</span>
         </a>
       </li>
       <li>
-        <a nameClass='services' href='#'>
+        <a className='services' href='#'>
           <span>Services</span>
         </a>
       </li>
       <li>
-        <a nameClass='portfolio' href='#'>
+        <a className='portfolio' href='#'>
           <span>Portfolio</span>
         </a>
       </li>
       <li>
-        <a nameClass='contact' href='#'>
+        <a className='contact' href='#'>
           <span>Contact us</span>
         </a>
       </li>
