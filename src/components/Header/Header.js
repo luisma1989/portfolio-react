@@ -22,7 +22,7 @@ class Header extends React.Component {
             <div className='row'>
               <div className='col-md-8 col-sm-8'>
                 <div className='home_text wow bounceIn' data-wow-duration='1.5s'>
-                  <h1>LUIS MANUEL FERNÁNDEZ CAMACHO</h1>
+                  <h1>DAVID FERNÁNDEZ CAMACHO</h1>
                   <p>Desarrollador Front-End</p>
                   <div className='download-btn'>
                     <a className='btn wow fadeInRight' href='#ABOUT'>

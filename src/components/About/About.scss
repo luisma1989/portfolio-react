@@ -1,30 +1,30 @@
 
 .about {
-    background: #F1F1F1;
-    box-shadow: inset 0 15px 37px -15px black;
-    .container {
-      padding-bottom: 100px;
-    }
+  background: #F1F1F1;
+  box-shadow: inset 0 15px 37px -15px black;
+  display: flex;
+  .row_about {
+    flex: 1 50%;
+  }
 }
 
 .inner_about_title {
-    padding-bottom: 50px;
-    h2 {
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 30px;
-        line-height: 37px;
-        position: relative;
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: -12px;
-            left: 0;
-            width: 70px;
-            background: #f39c12;
-            height: 1px;
-        }
+  h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 70px;
+      background: #f39c12;
+      height: 1px;
     }
+  }
 }
 
 .inner_about_title p {
@@ -33,16 +33,6 @@
     margin-top: 40px;
 }
 
-.about_phone img {
-    width: 320px;
-    height: 375px;
-    border-radius: 50%;
-}
-
-@media (min-width: 991px) and (max-width: 1200px) {
-    .about_phone img {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-    }
+.about img {
+  width: 100%;
 }
