@@ -57,6 +57,8 @@ config.module.rules.push({
     query: {
       cacheDirectory: true,
       plugins: [
+        'transform-react-pug',
+        'transform-react-jsx',
         'babel-plugin-transform-class-properties',
         'babel-plugin-syntax-dynamic-import',
         [

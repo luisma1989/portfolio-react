@@ -4,7 +4,8 @@ import Header from '../../components/Header'
 import About from '../../components/About'
 import SliderTecnologies from '../../components/SliderTecnologies'
 import Experience from '../../components/Experience'
-import Linkedin from '../../components/Linkedin'
+import Sentence from '../../components/Sentence'
+import Social from '../../components/Social'
 // import Nav from '../../components/Nav'
 import './CoreLayout.scss'
 import '../../styles/core.scss'
@@ -14,10 +15,11 @@ class CoreLayout extends React.Component {
     return (
       <div>
         <Header />
-        <About />
-        <SliderTecnologies />
         <Experience />
-        <Linkedin />
+        <About />
+        <Sentence />
+        <Social />
+        <SliderTecnologies />
       </div>
     )
   }

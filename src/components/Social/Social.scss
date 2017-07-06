@@ -1,0 +1,39 @@
+.__social {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .__row {
+    width: 12%;
+    text-align: center;
+    border-right: 1px solid #DEDEDE;
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .__social {
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .__row {
+      width: 23%;
+      text-align: center;
+      border-right: 1px solid #DEDEDE;
+      &:last-child {
+        border: 0;
+      }
+      .icon {
+        width: 21px;
+        height: 21px;
+        background-size: cover;
+      }
+      .icon-youtube {
+        width: 30px;
+      }
+    }
+  }
+}
