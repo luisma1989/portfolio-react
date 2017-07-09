@@ -1,5 +1,8 @@
 .fin {
   &.__loans{
+    &>.__content{@include content;}
+    @include productStyleBase;
+    @include productStyleBlue;
     .__contentPicture{
       width: 570px;
       height: 600px;
@@ -37,7 +40,7 @@
       &:last-child{
         order:1;
         .__contentPicture{
-          border-top:10px solid red;
+          border-top:10px solid $base-2;
           &>picture{
             text-align: center;
             margin:0 auto;

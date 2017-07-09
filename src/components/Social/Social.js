@@ -6,15 +6,15 @@ class Social extends Component {
     return pug`
       article.__social
         .__row
-          i.material-icons computer
+          span.icon.icon-facebook
         .__row
-          i.material-icons computer
+          span.icon.icon-instagram
         .__row
-          i.material-icons computer
+          span.icon.icon-linkedin
         .__row
-          i.material-icons computer
+          span.icon.icon-twitter
         .__row
-          i.material-icons computer
+          span.icon.icon-youtube
     `;
   }
 }

@@ -15,17 +15,13 @@ class Header extends React.Component {
   }
 
   render () {
-    return (
-      <section className='header parallax' id='HOME'>
-        <div className='container home-container'>
-          <div className='home_text wow bounceIn' data-wow-duration='1.5s'>
-            <h1 className="title">
-              <span>DAVID</span><br /> FERNÁNDEZ CAMACHO
-            </h1>
-          </div>
-        </div>
-      </section>
-    )
+    return pug`
+      article.header.parallax
+        .container.home-container
+          .home_text.wow.bounceIn
+            h1.title
+              span DAVID FERNÁNDEZ CAMACHO
+    `;
   }
 }
 
