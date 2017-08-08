@@ -24,31 +24,6 @@
   }
 }
 
-// Webkit-style focus
-// ------------------
-@mixin tab-focus() {
-  // Default
-  outline: thin dotted #333;
-  // Webkit
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-// Center-align a block level element
-// ----------------------------------
-@mixin center-block() {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// IE7 inline-block
-// ----------------
-@mixin ie7-inline-block() {
-  *display: inline; /* IE7 inline-block hack */
-  *zoom: 1;
-}
-
 // Text overflow
 // -------------------------
 // Requires inline-block or block for proper styling
@@ -67,6 +42,54 @@
   text-shadow: none;
   background-color: transparent;
   border: 0;
+}
+
+@mixin content {
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  @media only screen and (max-width: 640px) {
+    padding:0 20px;
+  }
+}
+
+@mixin contentRow{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin row {
+  align-self: flex-start;
+  flex:1 45%;
+}
+
+@mixin contentImage {
+  display:block;
+  background-repeat: no-repeat;
+}
+
+@mixin productStyleBase{
+  margin-bottom: 40px;
+  .__contentRow{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .__row{
+    align-self: flex-start;
+    flex:1 45%;
+    &:first-child{
+      border-top-width: 10px;
+      border-top-style: solid;
+      padding-top:40px;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -316,23 +339,4 @@ font-size: #{$px / 10}rem;
 
 @mixin background($color, $url) {
     background: $color url($url+'?v='+unique_id());
-}
-
-@mixin animationAccordion($type){
-  @if $type == "out" {
-    max-height: 0;
-    -webkit-transition: max-height 0.5s ease-out;
-    -moz-transition: max-height 0.5s ease-out;
-    -ms-transition: max-height 0.5s ease-out;
-    -o-transition: max-height 0.5s ease-out;
-    transition: max-height 0.5s ease-out;
-    overflow: hidden;
-  } @else if $type == "in"{
-    max-height: 2000px;
-    -webkit-transition: max-height 1s ease-in;
-    -moz-transition: max-height 1s ease-in;
-    -ms-transition: max-height 1s ease-in;
-    -o-transition: max-height 1s ease-in;
-    transition: max-height 1s ease-in;
-  }
 }

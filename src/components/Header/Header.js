@@ -20,7 +20,9 @@ class Header extends React.Component {
         .container.home-container
           .home_text.wow.bounceIn
             h1.title
-              span DAVID FERNÁNDEZ CAMACHO
+              span DAVID
+              br
+              | FERNÁNDEZ CAMACHO
     `;
   }
 }
