@@ -2,22 +2,14 @@ import React, {Component} from 'react'
 import './Experience.scss'
 import image1 from './assets/image1.jpg'
 
-const dataJobs = {
-  'title': 'Mi gran experiencia',
-  'subtitle': 'Claim was created in 2012 by <span>Tobias van Schneider </span>with the goal to collect & combine unique colors for my future projects.'
-}
-
 class Experience extends Component {
-
   render() {
+    const { experienceData } = this.props;
     return pug`
       article.__experience
         .__content
-          .__title Mi experiencia
-          .__subtitle
-            | Claim was created in 2012 by
-            span  Tobias van Schneider
-            | with the goal to collect & combine unique colors for my future projects.
+          .__title #{ experienceData.title}
+          .__subtitle #{ experienceData.subtitle}
           .__contentRow
             ol.timeline
               li.timeline__entry
@@ -72,7 +64,7 @@ class Experience extends Component {
                 span.timeline__id 2006 - 2013
                 div.job.timeline__content
                   h1.e3.timeline__heading Restaurante In-Zalakain
-                  p.p3.timeline__text C/ Alvarez de Baena, 4, 28006 Madrid, España. Eventualmente ocasiones importantes 2006-2013.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+                  p.p3.timeline__text C/ Alvarez de Baena, 4, 28006 Madrid, España. Eventualmente ocasiones importantes 2006-2013.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
     `;
   }
 }

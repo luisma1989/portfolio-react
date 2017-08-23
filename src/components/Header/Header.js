@@ -15,14 +15,15 @@ class Header extends React.Component {
   }
 
   render () {
+    const {headerData} = this.props;
     return pug`
       article.header.parallax
         .container.home-container
           .home_text.wow.bounceIn
             h1.title
-              span DAVID
+              span #{headerData.name}
               br
-              | FERNÁNDEZ CAMACHO
+              | #{headerData.apellidos}
     `;
   }
 }

@@ -1,0 +1,50 @@
+{
+  "title": "Mi experiencia",
+  "subtitle": "Claim was created in 2012 by <span>Tobias van Schneider </span>with the goal to collect & combine unique colors for my future projects.",
+  "jobs": [
+    {
+      "title": "Compañia globus",
+      "subtitle": "Chef ejecutivo",
+      "text": "(2 restaurantes, sala de banquetes y catering)Calle Varobskaia 135,  Kirov, Kirov Oblast, 610000 Rusia. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)"
+    },
+    {
+      "title": "Compañia SPk-Neon",
+      "subtitle": "Chef ejecutivo",
+      "text": "(5 locales)Calle Lenina, 73, Kirov, Kirov Oblast, 610000 Rusia. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)"
+    },
+    {
+      "title": "Hotel Hilton kirov, Restaurante Karin.",
+      "subtitle": "Su chef",
+      "text": "Oktyabrsky Prospect 145,610017 Rusia. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)"
+    },
+    {
+      "title": "Restaurante колессо (koleso)",
+      "subtitle": "Jefe de partida caliente",
+      "text": "Calle Spasskaya, 18, Kirov, Kirov Oblast, 610000 Rusia Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)"
+    },
+    {
+      "title": "Hotel Avant Torrejón ****",
+      "subtitle": "Metre de hotel",
+      "text": "Avant aeropuerto****Avenida de las estaciones s/n, Torrejón de Ardoz. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno."
+    },
+    {
+      "title": "Restaurante Sula",
+      "subtitle": "Jefe de Rango",
+      "text": "Calle Jorge Juan 33, 28001, Madrid. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)"
+    },
+    {
+      "title": "Hotel Asset Torrejon ****",
+      "subtitle": "Jefe de Rango",
+      "text": "Avant aeropuerto****Avenida de las estaciones s/n, Torrejón de Ardoz. Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500."
+    },
+    {
+      "title": "Hotel Plaza Castilla *****",
+      "subtitle": "Practicas relativas al curso de Restauración",
+      "text": "C/Capitán Haya 43, Madrid España 28020.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)"
+    },
+    {
+      "title": "Restaurante In-Zalakain",
+      "text": "C/ Alvarez de Baena, 4, 28006 Madrid, España. Eventualmente ocasiones importantes 2006-2013.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) "
+    }
+  ]
+}

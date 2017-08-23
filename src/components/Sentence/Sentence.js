@@ -3,13 +3,14 @@ import './Sentence.scss'
 
 class Sentence extends Component {
   render() {
+    const { sentenceData } = this.props;
     return pug`
       article.__sentence
         .__content
-          span.smalltitle LO QUE DICEN DE MÍ
+          span.smalltitle #{ sentenceData.title }
           span.icon.icon-review
           .phrase
-            p He trabajado junto a David durante varios años y considero que es un gran profesional y una gran persona.
+            p #{ sentenceData.text }
     `;
   }
 }
