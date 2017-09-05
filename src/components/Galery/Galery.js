@@ -1,27 +1,46 @@
-import React, {Component} from 'react'
-import './Galery.scss'
-import image1 from './assets/image1.jpg'
-import image2 from './assets/david.jpg'
-import image3 from './assets/image3.jpg'
-
-class Galery extends Component {
-  render() {
-    return pug`
-      article.__galery
-        figure.__row
-          img.image1(src=image1)
-          figcaption
-            div hola
-        figure.__row
-          img.image2(src=image2)
-          figcaption
-            div hola
-        figure.__row
-          img.image3(src=image3)
-          figcaption
-            div hola
-    `;
-  }
+import React from 'react';
+import Gallery from 'react-photo-gallery';
+ 
+export default class Galery extends React.Component {
+    render() {
+    return (
+        <Gallery photos={PHOTO_SET} onClickPhoto={this.openLightbox}/>
+    );
+    }
 }
-
-export default Galery
+const PHOTO_SET = [
+  {
+    src: 'http://lorempixel.com/400/200',
+    srcset: [
+      'http://lorempixel.com/400/200 1024w',
+      'http://lorempixel.com/400/200 800w',
+      'http://lorempixel.com/400/200 500w',
+      'http://lorempixel.com/400/200 320w',
+    ],
+    sizes:[
+      '(min-width: 480px) 50vw',
+      '(min-width: 1024px) 33.3vw',
+      '100vw'
+    ],
+    width: 681,
+    height: 1024,
+    alt: 'image 1',
+  },
+  {
+    src: 'http://lorempixel.com/400/200',
+    srcset: [
+      'http://lorempixel.com/400/200 1024w',
+      'http://lorempixel.com/400/200 800w',
+      'http://lorempixel.com/400/200 500w',
+      'http://lorempixel.com/400/200 320w',
+    ],
+    sizes:[
+      '(min-width: 480px) 50vw',
+      '(min-width: 1024px) 33.3vw',
+      '100vw'
+    ],
+    width: 600,
+    height: 600,
+    alt: 'image 2',
+  }
+];
