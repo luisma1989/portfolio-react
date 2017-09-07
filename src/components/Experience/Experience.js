@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
 import './Experience.scss'
-import image1 from './assets/image1.jpg'
 
 class Experience extends Component {
-  render() {
-    const { experienceData } = this.props;
+  render () {
+    const { experienceData } = this.props
     return pug`
       article.__experience
         .__content
@@ -65,7 +64,7 @@ class Experience extends Component {
                 div.job.timeline__content
                   h1.e3.timeline__heading Restaurante In-Zalakain
                   p.p3.timeline__text C/ Alvarez de Baena, 4, 28006 Madrid, España. Eventualmente ocasiones importantes 2006-2013.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
-    `;
+    `
   }
 }
 
