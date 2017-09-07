@@ -76,3 +76,34 @@
     font-weight: 200;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-flow: row wrap;
+    .row_about {
+      flex: 1 100%;
+      &:first-child {
+        padding-top: 30px;
+      }
+    }
+    .__contentRow { flex-flow: row wrap;}
+    .__content-box {
+      float:none;
+      min-height:auto;
+      padding: 0 20px;
+      max-width: 100%;
+    }
+    .p4 {
+      margin-right:0;
+      margin-bottom: 30px;
+    }
+    .smalltitle {
+      margin-bottom: 30px;
+    }
+    .__contentImage {
+      height: 410px;
+      background-position: top;
+      background-size: cover;
+    }
+  }
+}
