@@ -1,6 +1,5 @@
 import React from 'react'
 import $ from 'jquery'
-// import { IndexLink, Link } from 'react-router'
 import './Header.scss'
 
 class Header extends React.Component {
@@ -15,7 +14,7 @@ class Header extends React.Component {
   }
 
   render () {
-    const {headerData} = this.props;
+    const { headerData } = this.props
     return pug`
       article.header.parallax
         .container.home-container
@@ -24,7 +23,7 @@ class Header extends React.Component {
               span #{headerData.name}
               br
               | #{headerData.apellidos}
-    `;
+    `
   }
 }
 
