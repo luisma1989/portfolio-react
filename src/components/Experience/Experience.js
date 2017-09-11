@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import './Experience.scss'
 
 class Experience extends Component {
@@ -12,7 +12,7 @@ class Experience extends Component {
           .__contentRow
             ol.timeline
               li.timeline__entry
-                span.timeline__id 2016 - Actualidad
+                span.timeline__id Actualidad
                 div.job.timeline__content
                   h1.e3.timeline__heading Compañia globus
                   h2.timeline__subtitle Chef ejecutivo

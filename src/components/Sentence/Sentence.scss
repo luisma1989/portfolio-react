@@ -44,23 +44,17 @@
 }
 
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 640px) {
  .__sentence {
    min-height: auto;
-   ul{
-     li{
-       p{
-         font-size: 24px;
-         line-height: 30px;
-         margin-bottom:30px;
-       }
-       span{
-         &:before{
-           content: '';
-           margin: 0 auto 30px;
-         }
-       }
-     }
+   .smalltitle {
+     font-size: 15px;
    }
+   .phrase{
+    p{
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
  }
 }
