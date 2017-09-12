@@ -15,15 +15,19 @@ class Header extends React.Component {
 
   render () {
     const { headerData } = this.props
-    return pug`
-      article.header.parallax
-        .container.home-container
-          .home_text.wow.bounceIn
-            h1.title
-              span #{headerData.name}
-              br
-              | #{headerData.apellidos}
-    `
+    return (
+      <article className="header parallax">
+        <div className="container home-container">
+          <div className="home_text wow bounceIn">
+            <h1 className="title">
+              <span>{headerData.name}</span>
+              <br/>
+              {headerData.apellidos}
+            </h1>
+          </div>
+        </div>
+      </article>
+    )
   }
 }
 

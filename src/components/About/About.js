@@ -1,7 +1,6 @@
 import React from 'react'
 import WOW from 'wowjs'
 import './About.scss'
-import imageFace from './assets/david_2.jpg'
 
 class About extends React.Component {
   componentDidMount () {
@@ -9,16 +8,21 @@ class About extends React.Component {
   }
 
   render () {
-    const { aboutData } = this.props;
-    return pug`
-      article.about.page
-        .row_about.wow.fadeInRight
-          .info
-            h2.smalltitle #{aboutData.title}
-            p.p4 #{aboutData.text}
-        .row_about
-          .__contentImage
-    `;
+    const { aboutData } = this.props
+
+    return (
+      <article className="about page">
+        <div className="row_about wow fadeInRight">
+          <div className="info">
+            <h2 className="smalltitle">{aboutData.title}</h2>
+            <p className="p4">{aboutData.text}</p>
+          </div>
+        </div>
+        <div className="row_about">
+          <div className="__contentImage"></div>
+        </div>
+      </article>
+    )
   }
 }
 
