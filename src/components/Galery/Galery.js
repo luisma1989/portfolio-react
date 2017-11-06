@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Gallery from 'react-photo-gallery'
 import Measure from 'react-measure'
 import Lightbox from 'react-images'
+import './Galery.scss'
 
 import image1 from './assets/david_galeria_1.jpg'
 import image2 from './assets/david_galeria_2.jpg'
@@ -91,10 +92,9 @@ export default class Galery extends Component {
   render () {
     if (this.state.photos) {
       return (
-        <div>
+        <article className="galery">
           {this.renderGallery()}
           <Lightbox
-            theme={{container: { background: 'rgba(0, 0, 0, 0.85)' }}}
             images={this.state.photos}
             backdropClosesModal={true}
             onClose={this.closeLightbox}
@@ -104,7 +104,7 @@ export default class Galery extends Component {
             isOpen={this.state.lightboxIsOpen}
             width={1600}
           />
-        </div>
+        </article>
       )
     }
   }
@@ -113,288 +113,106 @@ export default class Galery extends Component {
 const PHOTO_SET = [
   {
     src: image1,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 681,
-    height: 1024,
     alt: 'image 1'
   },
   {
     src: image2,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image3,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image4,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image5,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image6,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image7,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image8,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image9,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image10,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image11,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image12,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image13,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image14,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image15,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image16,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image17,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image18,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image19,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image20,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image21,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image22,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image23,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image24,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image25,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   },
   {
     src: image26,
-    sizes: [
-      '(min-width: 480px) 50vw',
-      '(min-width: 1024px) 33.3vw',
-      '100vw'
-    ],
-    width: 600,
-    height: 600,
     alt: 'image 2'
   }
 ]

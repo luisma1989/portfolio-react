@@ -16,7 +16,7 @@
   "repository": {
     "type": "git"
   },
-  "author": "David Zukowski <david@zuko.me> (http://zuko.me)",
+  "author": "Luis Manuel Fernandez Camacho",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha",
